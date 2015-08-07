@@ -30,6 +30,7 @@
         {
             this.Menu = new System.Windows.Forms.Panel();
             this.FizzBuzzBut = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.Menu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -52,11 +53,19 @@
             this.FizzBuzzBut.UseVisualStyleBackColor = true;
             this.FizzBuzzBut.Click += new System.EventHandler(this.FizzBuzzBut_Click);
             // 
+            // panel1
+            // 
+            this.panel1.Location = new System.Drawing.Point(638, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(200, 100);
+            this.panel1.TabIndex = 1;
+            // 
             // TextProgramis
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(795, 517);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.Menu);
             this.Name = "TextProgramis";
             this.Text = "Text Programs";
@@ -69,6 +78,7 @@
 
         private System.Windows.Forms.Panel Menu;
         private System.Windows.Forms.Button FizzBuzzBut;
+        private System.Windows.Forms.Panel panel1;
     }
 }
 

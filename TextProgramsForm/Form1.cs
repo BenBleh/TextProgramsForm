@@ -20,6 +20,7 @@ namespace TextProgramsForm
         private void FizzBuzzBut_Click(object sender, EventArgs e)
         {
             this.Menu.Visible = false;
+
         }
     }
 }
