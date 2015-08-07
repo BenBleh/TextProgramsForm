@@ -1,0 +1,9 @@
+c:\users\benja_000\documents\visual studio 2015\Projects\TextProgramsForm\TextProgramsForm\bin\Debug\TextProgramsForm.exe.config
+c:\users\benja_000\documents\visual studio 2015\Projects\TextProgramsForm\TextProgramsForm\bin\Debug\TextProgramsForm.exe
+c:\users\benja_000\documents\visual studio 2015\Projects\TextProgramsForm\TextProgramsForm\bin\Debug\TextProgramsForm.pdb
+c:\users\benja_000\documents\visual studio 2015\Projects\TextProgramsForm\TextProgramsForm\obj\Debug\TextProgramsForm.csprojResolveAssemblyReference.cache
+c:\users\benja_000\documents\visual studio 2015\Projects\TextProgramsForm\TextProgramsForm\obj\Debug\TextProgramsForm.TextProgramis.resources
+c:\users\benja_000\documents\visual studio 2015\Projects\TextProgramsForm\TextProgramsForm\obj\Debug\TextProgramsForm.Properties.Resources.resources
+c:\users\benja_000\documents\visual studio 2015\Projects\TextProgramsForm\TextProgramsForm\obj\Debug\TextProgramsForm.csproj.GenerateResource.Cache
+c:\users\benja_000\documents\visual studio 2015\Projects\TextProgramsForm\TextProgramsForm\obj\Debug\TextProgramsForm.exe
+c:\users\benja_000\documents\visual studio 2015\Projects\TextProgramsForm\TextProgramsForm\obj\Debug\TextProgramsForm.pdb
