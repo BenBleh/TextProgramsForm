@@ -48,10 +48,26 @@
             this.PgltOutput = new System.Windows.Forms.RichTextBox();
             this.PgLtInput = new System.Windows.Forms.RichTextBox();
             this.PigLatDesc = new System.Windows.Forms.RichTextBox();
+            this.CountVowels = new System.Windows.Forms.TabPage();
+            this.CountVowelsRun = new System.Windows.Forms.Button();
+            this.CountVowelsTxtO = new System.Windows.Forms.TextBox();
+            this.CountVowelsTxtI = new System.Windows.Forms.TextBox();
+            this.CountVowelsOutput = new System.Windows.Forms.RichTextBox();
+            this.CountVowelsInput = new System.Windows.Forms.RichTextBox();
+            this.CountVowelsDesc = new System.Windows.Forms.RichTextBox();
+            this.Palindrome = new System.Windows.Forms.TabPage();
+            this.PalindromeRun = new System.Windows.Forms.Button();
+            this.PalindrometxtOur = new System.Windows.Forms.TextBox();
+            this.PalindrometxtInput = new System.Windows.Forms.TextBox();
+            this.PalindromeOutput = new System.Windows.Forms.RichTextBox();
+            this.PalindromeInput = new System.Windows.Forms.RichTextBox();
+            this.Palindromedesc = new System.Windows.Forms.RichTextBox();
             this.tabControl1.SuspendLayout();
             this.FizzBuzz.SuspendLayout();
             this.Reverse.SuspendLayout();
             this.PigLatin.SuspendLayout();
+            this.CountVowels.SuspendLayout();
+            this.Palindrome.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -59,6 +75,8 @@
             this.tabControl1.Controls.Add(this.FizzBuzz);
             this.tabControl1.Controls.Add(this.Reverse);
             this.tabControl1.Controls.Add(this.PigLatin);
+            this.tabControl1.Controls.Add(this.CountVowels);
+            this.tabControl1.Controls.Add(this.Palindrome);
             this.tabControl1.Location = new System.Drawing.Point(0, -1);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -247,6 +265,148 @@
             this.PigLatDesc.TabIndex = 6;
             this.PigLatDesc.Text = resources.GetString("PigLatDesc.Text");
             // 
+            // CountVowels
+            // 
+            this.CountVowels.Controls.Add(this.CountVowelsRun);
+            this.CountVowels.Controls.Add(this.CountVowelsTxtO);
+            this.CountVowels.Controls.Add(this.CountVowelsTxtI);
+            this.CountVowels.Controls.Add(this.CountVowelsOutput);
+            this.CountVowels.Controls.Add(this.CountVowelsInput);
+            this.CountVowels.Controls.Add(this.CountVowelsDesc);
+            this.CountVowels.Location = new System.Drawing.Point(4, 22);
+            this.CountVowels.Name = "CountVowels";
+            this.CountVowels.Padding = new System.Windows.Forms.Padding(3);
+            this.CountVowels.Size = new System.Drawing.Size(787, 493);
+            this.CountVowels.TabIndex = 3;
+            this.CountVowels.Text = "Count Vowels";
+            this.CountVowels.UseVisualStyleBackColor = true;
+            // 
+            // CountVowelsRun
+            // 
+            this.CountVowelsRun.Location = new System.Drawing.Point(361, 267);
+            this.CountVowelsRun.Name = "CountVowelsRun";
+            this.CountVowelsRun.Size = new System.Drawing.Size(75, 23);
+            this.CountVowelsRun.TabIndex = 17;
+            this.CountVowelsRun.Text = "Run";
+            this.CountVowelsRun.UseVisualStyleBackColor = true;
+            this.CountVowelsRun.Click += new System.EventHandler(this.CountVowelsRun_Click);
+            // 
+            // CountVowelsTxtO
+            // 
+            this.CountVowelsTxtO.Location = new System.Drawing.Point(586, 128);
+            this.CountVowelsTxtO.Name = "CountVowelsTxtO";
+            this.CountVowelsTxtO.ReadOnly = true;
+            this.CountVowelsTxtO.Size = new System.Drawing.Size(100, 20);
+            this.CountVowelsTxtO.TabIndex = 16;
+            this.CountVowelsTxtO.Text = "Output";
+            // 
+            // CountVowelsTxtI
+            // 
+            this.CountVowelsTxtI.Location = new System.Drawing.Point(99, 128);
+            this.CountVowelsTxtI.Name = "CountVowelsTxtI";
+            this.CountVowelsTxtI.ReadOnly = true;
+            this.CountVowelsTxtI.Size = new System.Drawing.Size(100, 20);
+            this.CountVowelsTxtI.TabIndex = 15;
+            this.CountVowelsTxtI.Text = "Input";
+            // 
+            // CountVowelsOutput
+            // 
+            this.CountVowelsOutput.Location = new System.Drawing.Point(482, 172);
+            this.CountVowelsOutput.Name = "CountVowelsOutput";
+            this.CountVowelsOutput.ReadOnly = true;
+            this.CountVowelsOutput.Size = new System.Drawing.Size(300, 308);
+            this.CountVowelsOutput.TabIndex = 14;
+            this.CountVowelsOutput.Text = "";
+            // 
+            // CountVowelsInput
+            // 
+            this.CountVowelsInput.Location = new System.Drawing.Point(5, 172);
+            this.CountVowelsInput.Name = "CountVowelsInput";
+            this.CountVowelsInput.Size = new System.Drawing.Size(300, 300);
+            this.CountVowelsInput.TabIndex = 13;
+            this.CountVowelsInput.Text = "";
+            // 
+            // CountVowelsDesc
+            // 
+            this.CountVowelsDesc.Location = new System.Drawing.Point(5, 12);
+            this.CountVowelsDesc.Name = "CountVowelsDesc";
+            this.CountVowelsDesc.ReadOnly = true;
+            this.CountVowelsDesc.Size = new System.Drawing.Size(773, 96);
+            this.CountVowelsDesc.TabIndex = 12;
+            this.CountVowelsDesc.Text = "Count Vowels - Enter a string and the program counts the number of vowels in the " +
+    "text. For added complexity have it report a sum of each vowel found.";
+            // 
+            // Palindrome
+            // 
+            this.Palindrome.Controls.Add(this.PalindromeRun);
+            this.Palindrome.Controls.Add(this.PalindrometxtOur);
+            this.Palindrome.Controls.Add(this.PalindrometxtInput);
+            this.Palindrome.Controls.Add(this.PalindromeOutput);
+            this.Palindrome.Controls.Add(this.PalindromeInput);
+            this.Palindrome.Controls.Add(this.Palindromedesc);
+            this.Palindrome.Location = new System.Drawing.Point(4, 22);
+            this.Palindrome.Name = "Palindrome";
+            this.Palindrome.Padding = new System.Windows.Forms.Padding(3);
+            this.Palindrome.Size = new System.Drawing.Size(787, 493);
+            this.Palindrome.TabIndex = 4;
+            this.Palindrome.Text = "Is Palindrome ";
+            this.Palindrome.UseVisualStyleBackColor = true;
+            // 
+            // PalindromeRun
+            // 
+            this.PalindromeRun.Location = new System.Drawing.Point(361, 267);
+            this.PalindromeRun.Name = "PalindromeRun";
+            this.PalindromeRun.Size = new System.Drawing.Size(75, 23);
+            this.PalindromeRun.TabIndex = 23;
+            this.PalindromeRun.Text = "Run";
+            this.PalindromeRun.UseVisualStyleBackColor = true;
+            this.PalindromeRun.Click += new System.EventHandler(this.PalindromeRun_Click);
+            // 
+            // PalindrometxtOur
+            // 
+            this.PalindrometxtOur.Location = new System.Drawing.Point(586, 128);
+            this.PalindrometxtOur.Name = "PalindrometxtOur";
+            this.PalindrometxtOur.ReadOnly = true;
+            this.PalindrometxtOur.Size = new System.Drawing.Size(100, 20);
+            this.PalindrometxtOur.TabIndex = 22;
+            this.PalindrometxtOur.Text = "Output";
+            // 
+            // PalindrometxtInput
+            // 
+            this.PalindrometxtInput.Location = new System.Drawing.Point(99, 128);
+            this.PalindrometxtInput.Name = "PalindrometxtInput";
+            this.PalindrometxtInput.ReadOnly = true;
+            this.PalindrometxtInput.Size = new System.Drawing.Size(100, 20);
+            this.PalindrometxtInput.TabIndex = 21;
+            this.PalindrometxtInput.Text = "Input";
+            // 
+            // PalindromeOutput
+            // 
+            this.PalindromeOutput.Location = new System.Drawing.Point(482, 172);
+            this.PalindromeOutput.Name = "PalindromeOutput";
+            this.PalindromeOutput.ReadOnly = true;
+            this.PalindromeOutput.Size = new System.Drawing.Size(300, 308);
+            this.PalindromeOutput.TabIndex = 20;
+            this.PalindromeOutput.Text = "";
+            // 
+            // PalindromeInput
+            // 
+            this.PalindromeInput.Location = new System.Drawing.Point(5, 172);
+            this.PalindromeInput.Name = "PalindromeInput";
+            this.PalindromeInput.Size = new System.Drawing.Size(300, 300);
+            this.PalindromeInput.TabIndex = 19;
+            this.PalindromeInput.Text = "";
+            // 
+            // Palindromedesc
+            // 
+            this.Palindromedesc.Location = new System.Drawing.Point(5, 12);
+            this.Palindromedesc.Name = "Palindromedesc";
+            this.Palindromedesc.ReadOnly = true;
+            this.Palindromedesc.Size = new System.Drawing.Size(773, 96);
+            this.Palindromedesc.TabIndex = 18;
+            this.Palindromedesc.Text = "Check if Palindrome - Checks if the string entered by the user is a palindrome. T" +
+    "hat is that it reads the same forwards as backwards like “racecar”";
+            // 
             // TextProgramis
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -261,6 +421,10 @@
             this.Reverse.PerformLayout();
             this.PigLatin.ResumeLayout(false);
             this.PigLatin.PerformLayout();
+            this.CountVowels.ResumeLayout(false);
+            this.CountVowels.PerformLayout();
+            this.Palindrome.ResumeLayout(false);
+            this.Palindrome.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -286,6 +450,20 @@
         private System.Windows.Forms.RichTextBox PgltOutput;
         private System.Windows.Forms.RichTextBox PgLtInput;
         private System.Windows.Forms.RichTextBox PigLatDesc;
+        private System.Windows.Forms.TabPage CountVowels;
+        private System.Windows.Forms.Button CountVowelsRun;
+        private System.Windows.Forms.TextBox CountVowelsTxtO;
+        private System.Windows.Forms.TextBox CountVowelsTxtI;
+        private System.Windows.Forms.RichTextBox CountVowelsOutput;
+        private System.Windows.Forms.RichTextBox CountVowelsInput;
+        private System.Windows.Forms.RichTextBox CountVowelsDesc;
+        private System.Windows.Forms.TabPage Palindrome ;
+        private System.Windows.Forms.Button PalindromeRun;
+        private System.Windows.Forms.TextBox PalindrometxtOur;
+        private System.Windows.Forms.TextBox PalindrometxtInput;
+        private System.Windows.Forms.RichTextBox PalindromeOutput;
+        private System.Windows.Forms.RichTextBox PalindromeInput;
+        private System.Windows.Forms.RichTextBox Palindromedesc;
     }
 }
 
