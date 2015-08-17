@@ -142,6 +142,19 @@ namespace TextProgramsForm
                 }
             }
         }
+
+        private void CountWords_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CountWordsRun_Click(object sender, EventArgs e)
+        {
+           String[] words = StringExtensions.getWords(CountWordsInput.Text);
+           // CountWordsInput.Text.Count(Char.IsWhiteSpace);
+           CountWordsOutput.Text="The input has " + CountWordsInput.Text.Count(Char.IsWhiteSpace) + "words.";
+            Console.Write(words);
+        }
     }
 
     public static class CharExtensions

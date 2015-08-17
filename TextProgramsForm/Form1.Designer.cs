@@ -62,12 +62,20 @@
             this.PalindromeOutput = new System.Windows.Forms.RichTextBox();
             this.PalindromeInput = new System.Windows.Forms.RichTextBox();
             this.Palindromedesc = new System.Windows.Forms.RichTextBox();
+            this.CountWords = new System.Windows.Forms.TabPage();
+            this.CountWordsRun = new System.Windows.Forms.Button();
+            this.CountWordsTXTOut = new System.Windows.Forms.TextBox();
+            this.CountWordsTXTIn = new System.Windows.Forms.TextBox();
+            this.CountWordsOutput = new System.Windows.Forms.RichTextBox();
+            this.CountWordsInput = new System.Windows.Forms.RichTextBox();
+            this.CountWordsDesc = new System.Windows.Forms.RichTextBox();
             this.tabControl1.SuspendLayout();
             this.FizzBuzz.SuspendLayout();
             this.Reverse.SuspendLayout();
             this.PigLatin.SuspendLayout();
             this.CountVowels.SuspendLayout();
             this.Palindrome.SuspendLayout();
+            this.CountWords.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -77,6 +85,7 @@
             this.tabControl1.Controls.Add(this.PigLatin);
             this.tabControl1.Controls.Add(this.CountVowels);
             this.tabControl1.Controls.Add(this.Palindrome);
+            this.tabControl1.Controls.Add(this.CountWords);
             this.tabControl1.Location = new System.Drawing.Point(0, -1);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -407,6 +416,78 @@
             this.Palindromedesc.Text = "Check if Palindrome - Checks if the string entered by the user is a palindrome. T" +
     "hat is that it reads the same forwards as backwards like “racecar”";
             // 
+            // CountWords
+            // 
+            this.CountWords.Controls.Add(this.CountWordsRun);
+            this.CountWords.Controls.Add(this.CountWordsTXTOut);
+            this.CountWords.Controls.Add(this.CountWordsTXTIn);
+            this.CountWords.Controls.Add(this.CountWordsOutput);
+            this.CountWords.Controls.Add(this.CountWordsInput);
+            this.CountWords.Controls.Add(this.CountWordsDesc);
+            this.CountWords.Location = new System.Drawing.Point(4, 22);
+            this.CountWords.Name = "CountWords";
+            this.CountWords.Padding = new System.Windows.Forms.Padding(3);
+            this.CountWords.Size = new System.Drawing.Size(787, 493);
+            this.CountWords.TabIndex = 5;
+            this.CountWords.Text = "Count Words";
+            this.CountWords.UseVisualStyleBackColor = true;
+            this.CountWords.Click += new System.EventHandler(this.CountWords_Click);
+            // 
+            // CountWordsRun
+            // 
+            this.CountWordsRun.Location = new System.Drawing.Point(361, 267);
+            this.CountWordsRun.Name = "CountWordsRun";
+            this.CountWordsRun.Size = new System.Drawing.Size(75, 23);
+            this.CountWordsRun.TabIndex = 29;
+            this.CountWordsRun.Text = "Run";
+            this.CountWordsRun.UseVisualStyleBackColor = true;
+            this.CountWordsRun.Click += new System.EventHandler(this.CountWordsRun_Click);
+            // 
+            // CountWordsTXTOut
+            // 
+            this.CountWordsTXTOut.Location = new System.Drawing.Point(586, 128);
+            this.CountWordsTXTOut.Name = "CountWordsTXTOut";
+            this.CountWordsTXTOut.ReadOnly = true;
+            this.CountWordsTXTOut.Size = new System.Drawing.Size(100, 20);
+            this.CountWordsTXTOut.TabIndex = 28;
+            this.CountWordsTXTOut.Text = "Output";
+            // 
+            // CountWordsTXTIn
+            // 
+            this.CountWordsTXTIn.Location = new System.Drawing.Point(99, 128);
+            this.CountWordsTXTIn.Name = "CountWordsTXTIn";
+            this.CountWordsTXTIn.ReadOnly = true;
+            this.CountWordsTXTIn.Size = new System.Drawing.Size(100, 20);
+            this.CountWordsTXTIn.TabIndex = 27;
+            this.CountWordsTXTIn.Text = "Input";
+            // 
+            // CountWordsOutput
+            // 
+            this.CountWordsOutput.Location = new System.Drawing.Point(482, 172);
+            this.CountWordsOutput.Name = "CountWordsOutput";
+            this.CountWordsOutput.ReadOnly = true;
+            this.CountWordsOutput.Size = new System.Drawing.Size(300, 308);
+            this.CountWordsOutput.TabIndex = 26;
+            this.CountWordsOutput.Text = "";
+            // 
+            // CountWordsInput
+            // 
+            this.CountWordsInput.Location = new System.Drawing.Point(5, 172);
+            this.CountWordsInput.Name = "CountWordsInput";
+            this.CountWordsInput.Size = new System.Drawing.Size(300, 300);
+            this.CountWordsInput.TabIndex = 25;
+            this.CountWordsInput.Text = "";
+            // 
+            // CountWordsDesc
+            // 
+            this.CountWordsDesc.Location = new System.Drawing.Point(5, 12);
+            this.CountWordsDesc.Name = "CountWordsDesc";
+            this.CountWordsDesc.ReadOnly = true;
+            this.CountWordsDesc.Size = new System.Drawing.Size(773, 96);
+            this.CountWordsDesc.TabIndex = 24;
+            this.CountWordsDesc.Text = "Count Words in a String - Counts the number of individual words in a string. For " +
+    "added complexity read these strings in from a text file and generate a summary.";
+            // 
             // TextProgramis
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -425,6 +506,8 @@
             this.CountVowels.PerformLayout();
             this.Palindrome.ResumeLayout(false);
             this.Palindrome.PerformLayout();
+            this.CountWords.ResumeLayout(false);
+            this.CountWords.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -464,6 +547,13 @@
         private System.Windows.Forms.RichTextBox PalindromeOutput;
         private System.Windows.Forms.RichTextBox PalindromeInput;
         private System.Windows.Forms.RichTextBox Palindromedesc;
+        private System.Windows.Forms.TabPage CountWords;
+        private System.Windows.Forms.Button CountWordsRun;
+        private System.Windows.Forms.TextBox CountWordsTXTOut;
+        private System.Windows.Forms.TextBox CountWordsTXTIn;
+        private System.Windows.Forms.RichTextBox CountWordsOutput;
+        private System.Windows.Forms.RichTextBox CountWordsInput;
+        private System.Windows.Forms.RichTextBox CountWordsDesc;
     }
 }
 
